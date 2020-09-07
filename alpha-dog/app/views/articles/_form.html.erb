@@ -7,6 +7,8 @@
     </ul>
 <% end %>
 
+<p><strong>Author: </strong><%= @article.user.username%></p>
+
 <%= form_with(model: @article, local: true) do |f|%>
     <p>
         <%= f.label :title %>
